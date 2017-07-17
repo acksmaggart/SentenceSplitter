@@ -1,1 +1,1 @@
-With python multiprocessing, 3-process pool using apply_async. Text2-5 as training data, Text1 as test data: 8'47.02"
+With python multiprocessing, 3-process pool using apply_async, on MacbookPro. Text2-5 as training data, Text1 as test data, 4 nearest neighbors, 10 dimensions: 8'47.02"
