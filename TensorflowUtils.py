@@ -13,22 +13,15 @@ def createTrainingArrays(trainingData, numPreceeding, numFollowing):
     pointDimension = numPreceeding + numFollowing
 
     trainingPointArray = np.zeros((numTrainingPoints, pointDimension))
-    boundaryList = []
+    boundaryList = np.zeros(numTrainingPoints)
 
     for index, sentenceBoundary in enumerate(trainingData.trainingBoundries):
         trainingPointArray[index] = np.array(sentenceBoundary.getArray())
         if sentenceBoundary.isNewSentence:
-            boundaryList.append(index)
+            boundaryList[index] = 1.
+        else:
+            boundaryList[index] = 0.
 
     boundaryNpArray = np.array(boundaryList)
 
     return trainingPointArray, boundaryNpArray
-
-def createTestArray(testBoundaries, numPreceeding, numFollowing):
-
-    boundaryArray = np.zeros((len(testBoundaries), numPreceeding + numFollowing))
-
-    for index, boundary in testBoundaries:
-        boundaryArray[index] = np.array(boundary.getArray())
-
-    return boundaryArray
