@@ -100,23 +100,57 @@ numFollowingArray = [30, 20, 10, 7, 5, 3, 1, 0]
 numNeighborsArray = [1, 3, 5, 9, 20]
 thresholdArray = [0.1, 0.3, 0.5, 0.7, 0.9, 0.999]
 
-feedDict = {
-    tfTrainingPoints: trainingPoints,
-    tfTestPoints: testPoints,
-    tfTrainingBoundariesVector: trainingBoundariesVector,
-    tfTestBoundariesVector: testBoundariesVector,
-    tfNumPreceeding: 5,
-    tfNumFollowing: 5,
-    tfThresholdWeight : 0.5,
-    numNeighbors: 4
-}
+best = {"accuracy" : 0,
+        "numPreceeding" : 0,
+        "numFollowing" : 0,
+        "numNeighbors" : 0,
+        "threshold" : 0}
 
-
-
-print "running..."
+worst = {"accuracy" : 1,
+        "numPreceeding" : 0,
+        "numFollowing" : 0,
+        "numNeighbors" : 0,
+        "threshold" : 0}
 start = datetime.now()
-print session.run(tfAccuracy, feedDict)
+
+for numNeighborsIteration in numNeighborsArray:
+    for numPreceedingIteration in numPreceedingArray:
+        for numFollowingIteration in numFollowingArray:
+            for thresholdIteration in thresholdArray:
+
+                feedDict = {
+                    tfTrainingPoints: trainingPoints,
+                    tfTestPoints: testPoints,
+                    tfTrainingBoundariesVector: trainingBoundariesVector,
+                    tfTestBoundariesVector: testBoundariesVector,
+                    tfNumPreceeding: numPreceedingIteration,
+                    tfNumFollowing: numFollowingIteration,
+                    tfThresholdWeight : thresholdIteration,
+                    numNeighbors: numNeighborsIteration
+                }
+
+                accuracyResult, numPreceedingResult, numFollowingResult, numNeighborsResult, thresholdResult = session.run([tfAccuracy, tfNumPreceeding, tfNumFollowing, numNeighbors, tfThresholdWeight], feedDict)
+
+                if accuracyResult[0] > best["accuracy"]:
+                    best["accuracy"] = accuracyResult[0]
+                    best["numPreceeding"] = numPreceedingResult,
+                    best["numFollowing"] = numFollowingResult
+                    best["numNeighbors"] = numNeighborsResult
+                    best["threshold"] = thresholdResult
+
+                if accuracyResult[0] < worst["accuracy"]:
+                    worst["accuracy"] = accuracyResult[0]
+                    worst["numPreceeding"] = numPreceedingResult,
+                    worst["numFollowing"] = numFollowingResult
+                    worst["numNeighbors"] = numNeighborsResult
+                    worst["threshold"] = thresholdResult
+
 end = datetime.now()
-
 print "Elapsed: %s" % (end - start)
-
+print ""
+print "Best:"
+print best
+print ""
+print ""
+print "Worst:"
+print worst
