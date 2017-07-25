@@ -8,7 +8,8 @@ import TensorflowUtils
 # 1 by n tensor. Use tf.nn.top_k to find the closest points and their indices.
 
 # maximum value for numPreceeding and numFollowing
-maxSideLength = 5
+print "Starting Program"
+maxSideLength = 30
 
 text1SentenceBoundries = [255, 374, 477, 627, 821, 918, 1058, 1249, 1299, 1494, 1697,
                           1874, 2151, 2279, 2378, 2486, 2628, 2773, 2976, 3089, 3264,
@@ -37,7 +38,9 @@ text5SentenceBoundries = [112, 184, 379, 649, 706, 889, 948, 1161, 1229, 1430, 1
 trainingDocs = ['Text2.txt', 'Text3.txt', 'Text4.txt', 'Text5.txt']
 sentenceBoundaries = [text2SentenceBoundries, text3SentenceBoundries, text4SentenceBoundries, text5SentenceBoundries]
 
+print "About to create training data."
 trainingData = Processor.parseMultipleTrainingDocs(trainingDocs, sentenceBoundaries, maxSideLength, maxSideLength)
+print "Training data created."
 
 testDocName = "Text1.txt"
 testDocBoundaryArray = text1SentenceBoundries
@@ -45,14 +48,19 @@ inFile = open(testDocName, 'rU')
 testDocContent = inFile.read()
 inFile.close()
 
+print "About to create test data."
 testData = Processor.parseTrainingDoc(testDocContent, text1SentenceBoundries, maxSideLength, maxSideLength)
+print "Test data created."
 
+print "About to create npArrays."
 trainingPoints, trainingBoundariesVector = TensorflowUtils.createTrainingArrays(trainingData, maxSideLength, maxSideLength)
 testPoints, testBoundariesVector = TensorflowUtils.createTrainingArrays(testData, maxSideLength, maxSideLength)
+print "npArrays created."
 
 # Define the tensorflow graph
 # Initially only train on threshold weight.
 
+print "Defining tensorflow graph."
 tfMaxSideLength = maxSideLength
 
 numNeighbors = tf.placeholder("int32")
@@ -113,6 +121,7 @@ worst = {"accuracy" : 1,
         "threshold" : 0}
 start = datetime.now()
 
+print "About to start iterations."
 for numNeighborsIteration in numNeighborsArray:
     for numPreceedingIteration in numPreceedingArray:
         for numFollowingIteration in numFollowingArray:
@@ -130,7 +139,18 @@ for numNeighborsIteration in numNeighborsArray:
                 }
 
                 accuracyResult, numPreceedingResult, numFollowingResult, numNeighborsResult, thresholdResult = session.run([tfAccuracy, tfNumPreceeding, tfNumFollowing, numNeighbors, tfThresholdWeight], feedDict)
-
+                # truncationStart, numPreceeding, numFollowing = session.run([tfTruncationStart, tfNumPreceeding, tfNumFollowing], feedDict)
+                #
+                # print "Num Preceeding:"
+                # print numPreceeding
+                #
+                # print "Num Following:"
+                # print numFollowing
+                #
+                # print "TruncationStart:"
+                # print truncationStart
+                # print ""
+                # print""
                 if accuracyResult[0] > best["accuracy"]:
                     best["accuracy"] = accuracyResult[0]
                     best["numPreceeding"] = numPreceedingResult,
