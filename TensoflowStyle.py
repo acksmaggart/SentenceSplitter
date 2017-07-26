@@ -1,7 +1,8 @@
 import tensorflow as tf
 import NoteProcessing as Processor
 from datetime import datetime
-import numpy as np
+import sys
+import os
 import TensorflowUtils
 
 # create the training data and test data. The training data will be entered as an n by m tensor and the test data as a
@@ -99,33 +100,44 @@ tfAccuracy = tf.div(tf.reduce_sum(tfMatchVector), tf.cast(tf.shape(tfMatchVector
 tfLoss = 1 - tfAccuracy
 
 
-session = tf.Session()
-init = tf.global_variables_initializer()
-session.run(init)
-
-numPreceedingArray = [30, 20, 10, 7, 5, 3, 1, 0]
-numFollowingArray = [30, 20, 10, 7, 5, 3, 1, 0]
+numFollowingArray = [0, 1, 3, 5, 7, 10, 20, 30]
+numPreceedingArray = [0, 1, 3, 5, 7, 10, 20, 30]
 numNeighborsArray = [1, 3, 5, 9, 20]
 thresholdArray = [0.1, 0.3, 0.5, 0.7, 0.9, 0.999]
 
-best = {"accuracy" : 0,
-        "numPreceeding" : 0,
-        "numFollowing" : 0,
-        "numNeighbors" : 0,
-        "threshold" : 0}
-
-worst = {"accuracy" : 1,
-        "numPreceeding" : 0,
-        "numFollowing" : 0,
-        "numNeighbors" : 0,
-        "threshold" : 0}
+# best = {"accuracy" : 0,
+#         "numPreceeding" : 0,
+#         "numFollowing" : 0,
+#         "numNeighbors" : 0,
+#         "threshold" : 0}
+#
+# worst = {"accuracy" : 1,
+#         "numPreceeding" : 0,
+#         "numFollowing" : 0,
+#         "numNeighbors" : 0,
+#         "threshold" : 0}
 start = datetime.now()
 
+iterationCount = 0
+totalIterations = len(numPreceedingArray) * len(numFollowingArray) * len(numNeighborsArray) * len(thresholdArray)
+
+outFilePath = "Report.txt"
+if os.path.isfile(outFilePath):
+    os.remove(outFilePath)
+outFile = open(outFilePath, 'a')
+outFile.write("NumPreceeding\tNumFollowing\tNumNeighbors\tThreshold\tAccuracy\tRuntime\n")
+
 print "About to start iterations."
-for numNeighborsIteration in numNeighborsArray:
-    for numPreceedingIteration in numPreceedingArray:
-        for numFollowingIteration in numFollowingArray:
+for numPreceedingIteration in numPreceedingArray:
+    for numFollowingIteration in numFollowingArray:
+        for numNeighborsIteration in numNeighborsArray:
             for thresholdIteration in thresholdArray:
+
+                if numPreceedingIteration == 0 and numFollowingIteration == 0:
+                    continue
+
+                singleRunStart = datetime.now()
+                session = tf.Session()
 
                 feedDict = {
                     tfTrainingPoints: trainingPoints,
@@ -134,43 +146,44 @@ for numNeighborsIteration in numNeighborsArray:
                     tfTestBoundariesVector: testBoundariesVector,
                     tfNumPreceeding: numPreceedingIteration,
                     tfNumFollowing: numFollowingIteration,
-                    tfThresholdWeight : thresholdIteration,
+                    tfThresholdWeight: thresholdIteration,
                     numNeighbors: numNeighborsIteration
                 }
 
                 accuracyResult, numPreceedingResult, numFollowingResult, numNeighborsResult, thresholdResult = session.run([tfAccuracy, tfNumPreceeding, tfNumFollowing, numNeighbors, tfThresholdWeight], feedDict)
-                # truncationStart, numPreceeding, numFollowing = session.run([tfTruncationStart, tfNumPreceeding, tfNumFollowing], feedDict)
-                #
-                # print "Num Preceeding:"
-                # print numPreceeding
-                #
-                # print "Num Following:"
-                # print numFollowing
-                #
-                # print "TruncationStart:"
-                # print truncationStart
-                # print ""
-                # print""
-                if accuracyResult[0] > best["accuracy"]:
-                    best["accuracy"] = accuracyResult[0]
-                    best["numPreceeding"] = numPreceedingResult,
-                    best["numFollowing"] = numFollowingResult
-                    best["numNeighbors"] = numNeighborsResult
-                    best["threshold"] = thresholdResult
 
-                if accuracyResult[0] < worst["accuracy"]:
-                    worst["accuracy"] = accuracyResult[0]
-                    worst["numPreceeding"] = numPreceedingResult,
-                    worst["numFollowing"] = numFollowingResult
-                    worst["numNeighbors"] = numNeighborsResult
-                    worst["threshold"] = thresholdResult
+                # if accuracyResult[0] > best["accuracy"]:
+                #     best["accuracy"] = accuracyResult[0]
+                #     best["numPreceeding"] = numPreceedingResult,
+                #     best["numFollowing"] = numFollowingResult
+                #     best["numNeighbors"] = numNeighborsResult
+                #     best["threshold"] = thresholdResult
+                #
+                # if accuracyResult[0] < worst["accuracy"]:
+                #     worst["accuracy"] = accuracyResult[0]
+                #     worst["numPreceeding"] = numPreceedingResult,
+                #     worst["numFollowing"] = numFollowingResult
+                #     worst["numNeighbors"] = numNeighborsResult
+                #     worst["threshold"] = thresholdResult
 
+                session.close()
+                singleRunEnd = datetime.now()
+                singleRunElapsed = singleRunEnd - singleRunStart
+                outString = "%d\t%d\t%d\t%.3f\t%f\t%s\n" % (numPreceedingResult, numFollowingResult, numNeighborsResult, thresholdResult, accuracyResult[0], str(singleRunElapsed))
+                outFile.write(outString)
+                outFile.flush()
+
+                iterationCount += 1
+                sys.stdout.write("\rCompleted iteration %d of %d. (%.2f%%)" % (iterationCount, totalIterations, (float(iterationCount)/float(totalIterations))*100.))
+
+outFile.close()
 end = datetime.now()
+print ""
 print "Elapsed: %s" % (end - start)
-print ""
-print "Best:"
-print best
-print ""
-print ""
-print "Worst:"
-print worst
+# print ""
+# print "Best:"
+# print best
+# print ""
+# print ""
+# print "Worst:"
+# print worst
