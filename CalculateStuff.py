@@ -63,7 +63,7 @@ testDocContent = inFile.read()
 inFile.close()
 
 results = []
-testData = Processor.parseTestDoc(testDocContent, 5, 5)
+testData = Processor.parseTestDoc(testDocContent, 5, 5, text1SentenceBoundries)
 
 count = 0
 def taskComplete(resultTuple):
@@ -85,7 +85,7 @@ def processBoundry(boundry, k, norm):
     return (boundry, False)
 
 
-pool = Pool(processes=3)
+pool = Pool()
 
 print ""
 start = datetime.now()
@@ -97,6 +97,14 @@ end = datetime.now()
 elapsed = end - start
 print "Elapsed: %s" % str(elapsed)
 
+numMatches = 0
+
 for result in results:
+    boundary = result[0]
+    if (boundary.isNewSentence and result[1]) or (not boundary.isNewSentence and not result[1]):
+        numMatches += 1
     print result[0].preceeding + '|' + result[0].following + " " + str(result[1])
+
+accuracy = float(numMatches) / float(len(results))
+print "Accuracy: %.4f" % accuracy
 

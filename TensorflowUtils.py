@@ -25,3 +25,15 @@ def createTrainingArrays(trainingData, numPreceeding, numFollowing):
     boundaryNpArray = np.array(boundaryList)
 
     return trainingPointArray, boundaryNpArray
+
+def createTestArray(testBoundaries, numPreceeding, numFollowing):
+
+    numTrainingPoints = len(testBoundaries)
+    pointDimension = numPreceeding + numFollowing
+
+    trainingPointArray = np.zeros((numTrainingPoints, pointDimension))
+
+    for index, sentenceBoundary in enumerate(testBoundaries):
+        trainingPointArray[index] = np.array(sentenceBoundary.getArray())
+
+    return trainingPointArray

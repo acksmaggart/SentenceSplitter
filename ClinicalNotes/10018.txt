@@ -1,236 +1,236 @@
-Admission Date:  [**3018-5-25**]       Discharge Date: [**3018-6-3**]
+Admission Date:  [**3018-5-25**]^       Discharge Date: [**3018-6-3**]^
 
-Date of Birth:   [**2947-3-21**]       Sex:  M
+Date of Birth:   [**2947-3-21**]^       Sex:  M^
 
-Service:  CCU
+Service:  CCU^
 
-HISTORY OF PRESENT ILLNESS:  This is a 67-year-old man with
+HISTORY OF PRESENT ILLNESS:^  This is a 67-year-old man with
 diabetes mellitus type 2, coronary artery disease status post
 myocardial infarction in [**3016**], hypertension, and a former
 smoking history as well as a family history of coronary
 artery disease and age greater than 55, who presented with
 increased shortness of breath, chest pain and nausea and
-vomiting on the morning of admission to [**Hospital3 **].  The
+vomiting on the morning of admission to [**Hospital3 **].^  The
 patient stated he was in his usual state of health until last
 Saturday when, after dialysis, he began to feel short of
-breath.  He needed to sit up in his bed all night.  He also
-had some left-sided chest pain but can't remember it well.
+breath.^  He needed to sit up in his bed all night.^  He also
+had some left-sided chest pain but can't remember it well.^
 The shortness of breath persisted the following day as well
-as on the day of admission.  He said it was worse on both
+as on the day of admission.^  He said it was worse on both
 days in the early morning, but only on the day of admission
 was it accompanied by nausea and vomiting as well as chest
 pain which he stated occurred in the left, right and middle
-chest.  He had no angina in [**3016**] when he was stented.  He
+chest.^  He had no angina in [**3016**] when he was stented.^  He
 denied any peripheral edema, long-standing orthopnea,
-paroxysmal nocturnal dyspnea or claudication.  At the outside
+paroxysmal nocturnal dyspnea or claudication.^  At the outside
 hospital he was given aspirin, nitroglycerin, Lopressor,
-started on a heparin drip, and given intravenous fluids.  The
+started on a heparin drip, and given intravenous fluids.^  The
 chest x-ray showed questionable right lower lobe infiltrate
-versus congestive heart failure, so he was given Levaquin.
+versus congestive heart failure, so he was given Levaquin.^
 He was brought to [**Hospital1 58**] for
 catheterization which showed two-vessel disease, but
 intervention could not be accomplished given the location of
-the lesions.
+the lesions.^
 
-PAST MEDICAL HISTORY:  1. Hypertension.  2. Diabetes mellitus
-type 2 diet controlled.  3. Coronary artery disease status
-post right coronary artery stent in [**3016**].  4. Congestive
-heart failure.  5. End-stage renal disease on hemodialysis
-since [**3017**].  6. Left foot abscess history.
+PAST MEDICAL HISTORY:^  1. Hypertension.^  2. Diabetes mellitus
+type 2 diet controlled.^  3. Coronary artery disease status
+post right coronary artery stent in [**3016**].^  4. Congestive
+heart failure.^  5. End-stage renal disease on hemodialysis
+since [**3017**].^  6. Left foot abscess history.^
 
-MEDICATIONS:  1. Renagel.  2. Aspirin 81 mg p.o. q.d.  3.
-Hydralazine 30 mg p.o. q.i.d.  4. Isordil.  5. PhosLo.  6.
-Metoprolol  7. Lisinopril  8. Diltia XT.  9. On Levaquin a
-week ago for pneumonia.
+MEDICATIONS:^  1. Renagel.^  2. Aspirin 81 mg p.o. q.d.^  3.
+Hydralazine 30 mg p.o. q.i.d.^  4. Isordil.^  5. PhosLo.^  6.
+Metoprolol^  7. Lisinopril^  8. Diltia XT.^  9. On Levaquin a
+week ago for pneumonia.^
 
-SOCIAL HISTORY:  The patient has a smoking history but quit
+SOCIAL HISTORY:^  The patient has a smoking history but quit
 smoking in [**3016**] after greater than 50-pack-year tobacco
-history.  No alcohol.  No drugs.  He lives with his wife.  [**Name (NI) **]
-works for [**Location (un) 719**] Plantation as a security guard.
+history.^  No alcohol.^  No drugs.^  He lives with his wife.^  [**Name (NI) **]
+works for [**Location (un) 719**] Plantation as a security guard.^
 
-REVIEW OF SYSTEMS:  Negative for fevers but positive for
+REVIEW OF SYSTEMS:^  Negative for fevers but positive for
 chills, positive for a nonproductive cough, negative for
-melena or hematochezia, negative for urinary symptoms.  He
-does make some urine.
+melena or hematochezia, negative for urinary symptoms.^  He
+does make some urine.^
 
-FAMILY HISTORY:  The patient's father had coronary artery
-disease.
+FAMILY HISTORY:^  The patient's father had coronary artery
+disease.^
 
-PHYSICAL EXAMINATION:  Vital signs were pulse 106 and
+PHYSICAL EXAMINATION:^  Vital signs were pulse 106 and
 regular, blood pressure 167/64, respiratory rate 16,
 pulmonary artery pressure 75/47, oxygen saturation 100% on
-five liters.  General:  The patient was in no apparent
-distress and looked older than his stated age.  HEENT:
+five liters.^  General:  The patient was in no apparent
+distress and looked older than his stated age.^  HEENT:^
 Significant for extraocular movements intact and pupils
-equal, round and reactive to light and accommodation.  Neck:
-Significant for jugular venous distension to the jaw.  No
-bruits and no lymphadenopathy.  Chest:  Significant for
+equal, round and reactive to light and accommodation.^  Neck:^
+Significant for jugular venous distension to the jaw.^  No
+bruits and no lymphadenopathy.^  Chest:^  Significant for
 diffuse wheezing anteriorly and a Tesio catheter on the right
-side of the chest.  Cardiovascular:  Examination was
+side of the chest.^  Cardiovascular:^  Examination was
 significant for distant heart sounds, S1 and S2 normal, no
-murmurs, gallops, or rubs.  Abdomen:  Examination significant
-for positive bowel sounds, soft, nontender, nondistended.
-Extremities:  No cyanosis, clubbing or edema.  There was a
+murmurs, gallops, or rubs.^  Abdomen:^  Examination significant
+for positive bowel sounds, soft, nontender, nondistended.^
+Extremities:^  No cyanosis, clubbing or edema.^  There was a
 tissue defect on the left ball of the foot reflecting a
-previous abscess incision and drainage.  Neurological:
-Nonfocal, alert and oriented x 3 with no asterixis.
+previous abscess incision and drainage.^  Neurological:^
+Nonfocal, alert and oriented x 3 with no asterixis.^
 
-LABORATORY DATA:  The patient's white count was 10.6 with 83%
-neutrophils.  His hematocrit was 41.6.  Platelet count was
-202.  MCV was 97.  PTT 28.9.  Chemistries revealed a glucose
+LABORATORY DATA:^  The patient's white count was 10.6 with 83%
+neutrophils.^  His hematocrit was 41.6.^  Platelet count was
+202.^  MCV was 97.^  PTT 28.9.^  Chemistries revealed a glucose
 of 173, sodium 138, potassium 4.9, chloride 101, bicarbonate
-26, BUN 29, creatinine 6.  His calcium was 9.1.  Cardiac
-enzymes revealed a CK of 759 with a troponin of 8.  His LDH
-was 1,164.  His AST was 169, ALT 23, alkaline phosphatase
-107, bilirubin 0.6, albumin 3.2, total protein 6.5.
+26, BUN 29, creatinine 6.^  His calcium was 9.1.^  Cardiac
+enzymes revealed a CK of 759 with a troponin of 8.^  His LDH
+was 1,164.^  His AST was 169, ALT 23, alkaline phosphatase
+107, bilirubin 0.6, albumin 3.2, total protein 6.5.^
 
 EKG revealed sinus tachycardia, normal axis and intervals, no
 evidence of left ventricular hypertrophy, low voltage, Qs in
 2, 3 and F that were old, and pseudonormalization in 1, 2, 3
 and F as well as questionable ST and T wave changes in V1
-through V5.  Cardiac catheterization revealed two-vessel
+through V5.^  Cardiac catheterization revealed two-vessel
 coronary artery disease with a left anterior descending
 coronary artery distal occlusion, a left circumflex 40-50%
 long obtuse marginal #1, right coronary artery stent from a
 previous catheterization patent with a small distal PL lesion
-of 70% at the origin.  Cardiac catheterization revealed
+of 70% at the origin.^  Cardiac catheterization revealed
 moderate pulmonary hypertension and a wedge pressure of 32,
-with PA pressures of 50/27 and a mean of 34.
+with PA pressures of 50/27 and a mean of 34.^
 
-ASSESSMENT:  This is a 67-year-old man with multiple cardiac
+ASSESSMENT:^  This is a 67-year-old man with multiple cardiac
 risk factors, also end-stage renal disease, here with
 shortness of breath and chest pain concerning for acute
-coronary syndrome.
+coronary syndrome.^
 
-HOSPITAL COURSE:  The following is a summary of the [**Hospital **]
-hospital by problem:
+HOSPITAL COURSE:^  The following is a summary of the [**Hospital **]
+hospital by problem:^
 
-1. Coronary artery disease:  The patient's two-vessel disease
-was not amenable to angioplasty.  There is a question as to
+1. Coronary artery disease:^  The patient's two-vessel disease
+was not amenable to angioplasty.^  There is a question as to
 whether or not the patient would benefit from coronary artery
 bypass graft surgery, a question which at the time of this
-dictation had not yet been answered.  The patient was treated
+dictation had not yet been answered.^  The patient was treated
 with aspirin 325 mg p.o. q.d., Lipitor 10 mg p.o. q.d.,
-captopril 6.25 mg p.o. t.i.d.  The patient could not be
-started on a beta blocker because of hypotension.
+captopril 6.25 mg p.o. t.i.d.^  The patient could not be
+started on a beta blocker because of hypotension.^
 
 Because his coronary artery disease was not repaired during
 cardiac catheterization, the decision was made to keep the
-patient on heparin drip during his hospital stay.  This
+patient on heparin drip during his hospital stay.^  This
 heparin drip had to be discontinued on [**6-1**] because of
-persistent oozing from a groin line.
+persistent oozing from a groin line.^
 
-2. Congestive heart failure:  The patient was admitted with
-pulmonary edema.  An attempt was made to diurese the patient
+2. Congestive heart failure:^  The patient was admitted with
+pulmonary edema.^  An attempt was made to diurese the patient
 with Lasix, but this attempt was unsuccessful as the patient
-was not making enough urine to diurese.  The renal team was
+was not making enough urine to diurese.^  The renal team was
 requested to consult on the patient, and the patient was
-deemed appropriate for hemodialysis.  On several occasions
-during his hospital stay, the patient was dialyzed.  At the
+deemed appropriate for hemodialysis.^  On several occasions
+during his hospital stay, the patient was dialyzed.^  At the
 time of this dictation the patient had had a total of eight
-liters removed net.  The patient was also started on a salt
-and fluid restricted diet.  Multiple chest x-rays were taken
+liters removed net.^  The patient was also started on a salt
+and fluid restricted diet.^  Multiple chest x-rays were taken
 throughout his hospital stay to assess the status of his
-congestive heart failure.
+congestive heart failure.^
 
 An echocardiogram was obtained, which revealed mild left
 atrial dilatation, an ejection fraction of 30-35%, akinesis
 of the distal half of the left ventricle and posterior wall,
 severe thickening and deformity of the aortic valve leaflet,
 mild aortic valve stenosis, mild aortic regurgitation, mild
-mitral valve leaflet thickening, mild mitral regurgitation.
+mitral valve leaflet thickening, mild mitral regurgitation.^
 Based on the echocardiogram results, the patient was deemed
 appropriate for long-term anticoagulation, but this was not
 started immediately, given his hemodialysis issues which are
-further described below.  He was maintained on heparin during
+further described below.^  He was maintained on heparin during
 his hospital stay, but this had to be discontinued as
-mentioned above.  An attempt was made to start the patient on
+mentioned above.^  An attempt was made to start the patient on
 Coreg for his failure, but this had to be held because of
-hypotension.  He was able to tolerate captopril 6.25 mg p.o.
-t.i.d.
+hypotension.^  He was able to tolerate captopril 6.25 mg p.o.
+t.i.d.^
 
-3. Atrial fibrillation:  The patient experienced an episode
+3. Atrial fibrillation:^  The patient experienced an episode
 of atrial fibrillation without any symptoms while undergoing
-hemodialysis during his hospital stay.  As a result, he was
-started on amiodarone.  He did not have any further
-recurrence of his atrial fibrillation while in house.  A TSH
-was obtained and it was normal.
+hemodialysis during his hospital stay.^  As a result, he was
+started on amiodarone.^  He did not have any further
+recurrence of his atrial fibrillation while in house.^  A TSH
+was obtained and it was normal.^
 
-4. End-stage renal disease:  The patient underwent
-hemodialysis as mentioned above.  During hemodialysis, he
-also received erythropoietin.  He was continued on his
+4. End-stage renal disease:^  The patient underwent
+hemodialysis as mentioned above.^  During hemodialysis, he
+also received erythropoietin.^  He was continued on his
 outpatient dose of Renagel and his PhosLo was changed to
-Amphojel.  His hemodialysis access site, which consisted of a
+Amphojel.^  His hemodialysis access site, which consisted of a
 Tesio catheter, had to be discontinued after he spiked a
 fever in house and the line was considered a potential source
-of infection.  The renal team inserted a temporary
+of infection.^  The renal team inserted a temporary
 hemodialysis access catheter into his right femoral vein.
 This procedure was complicated by subsequent oozing from the
 site while on heparin, so the patient's heparin was
-discontinued.  The patient was dialyzed a total of eight
+discontinued.^  The patient was dialyzed a total of eight
 liters at dialysis, net negative at the time of this
-dictation.
+dictation.^
 
-5. Infectious disease:  The patient had an episode of
-shivering without fever or hypotension while at dialysis.
+5. Infectious disease:^  The patient had an episode of
+shivering without fever or hypotension while at dialysis.^
 Blood cultures were drawn and the patient was also
-pancultured.  There was no evidence of a urinary tract
-infection.  There was no evidence of a pneumonia by either
-sputum culture or chest x-ray.  The patient did have multiple
-bottles grow positive for coagulase-negative staphylococcus.
+pancultured.^  There was no evidence of a urinary tract
+infection.^  There was no evidence of a pneumonia by either
+sputum culture or chest x-ray.^  The patient did have multiple
+bottles grow positive for coagulase-negative staphylococcus.^
 Given the degree of bacteremia, the patient was continued on
 vancomycin which he had been started on when presumptive
-identification of Gram-positive cocci had been made.  The
+identification of Gram-positive cocci had been made.^  The
 patient has been receiving vancomycin one gram at dialysis
-based on vancomycin levels drawn in the morning.  The patient
-has been afebrile while on vancomycin.  The surgery team was
+based on vancomycin levels drawn in the morning.^  The patient
+has been afebrile while on vancomycin.^  The surgery team was
 requested to consult for placement of a new hemodialysis
-access site.
+access site.^
 
-6. Cough and wheezing:  The patient has a smoking history and
+6. Cough and wheezing:^  The patient has a smoking history and
 thus was presumed to have chronic obstructive pulmonary
-disease.  He was treated with albuterol and ipratropium
-nebulizers and inhalers while in house.  He was also started
-on a steroid inhaler, Flovent.  Chest x-ray showed no
-evidence of a pneumonia.
+disease.^  He was treated with albuterol and ipratropium
+nebulizers and inhalers while in house.^  He was also started
+on a steroid inhaler, Flovent.^  Chest x-ray showed no
+evidence of a pneumonia.^
 
-7. Anemia:  The patient was admitted with an hematocrit of
+7. Anemia:^  The patient was admitted with an hematocrit of
 41.6, but with hydration this number dropped to between 31
-and 34.  The patient suffered oozing from his right femoral
-groin site on heparin and so heparin was discontinued.  As a
+and 34.^  The patient suffered oozing from his right femoral
+groin site on heparin and so heparin was discontinued.^  As a
 consequence the patient's hematocrit dropped to below 28 and
-he required transfusion of packed red blood cells.  He was
+he required transfusion of packed red blood cells.^  He was
 consented and he suffered no complications on the transfusion
-which was arranged to be delivered during hemodialysis.  He
-was also given EPO at hemodialysis.
+which was arranged to be delivered during hemodialysis.^  He
+was also given EPO at hemodialysis.^
 
-8. Diabetes mellitus type 2:  The patient was maintained on a
+8. Diabetes mellitus type 2:^  The patient was maintained on a
 Regular Insulin sliding scale and [**Doctor First Name **] diet during his
-hospital stay.
+hospital stay.^
 
-9. Fluids, electrolytes and nutrition:  The patient had
+9. Fluids, electrolytes and nutrition:^  The patient had
 several episodes of hyperkalemia without symptoms or EKG
-changes.  He did receive Kayexalate as a temporizing measure
-on days when he was not hemodialyzed.  Nutritionally, he was
-on [**First Name8 (NamePattern2) **] [**Doctor First Name **] low-sodium, fluid restriction, heart healthy diet.
+changes.^  He did receive Kayexalate as a temporizing measure
+on days when he was not hemodialyzed.^  Nutritionally, he was
+on [**First Name8 (NamePattern2) **] [**Doctor First Name **] low-sodium, fluid restriction, heart healthy diet.^
 
-10. Prophylaxis:  The patient was treated with Protonix for
-GI prophylaxis.  For deep venous thrombosis prophylaxis he
-was on a heparin drip for most of his hospital stay.  When
-this was discontinued he was started on subcutaneous heparin.
+10. Prophylaxis:^  The patient was treated with Protonix for
+GI prophylaxis.^  For deep venous thrombosis prophylaxis he
+was on a heparin drip for most of his hospital stay.^  When
+this was discontinued he was started on subcutaneous heparin.^
 
 The remainder of this dictation will be completed by [**First Name4 (NamePattern1) **]
-[**Last Name (NamePattern1) 3615**], M.D.
+[**Last Name (NamePattern1) 3615**], M.D.^
 
 
 
 
 
-                            [**Last Name (LF) **],[**First Name8 (NamePattern2) **] [**Last Name (NamePattern1) 1709**]  M.D.  [**MD Number(1) 1710**]
+                            [**Last Name (LF) **],[**First Name8 (NamePattern2) **] [**Last Name (NamePattern1) 1709**]  M.D.  [**MD Number(1) 1710**]^
 
-Dictated By:[**Last Name (NamePattern1) 2139**]
-MEDQUIST36
+Dictated By:[**Last Name (NamePattern1) 2139**]^
+MEDQUIST36^
 
-D:  [**3018-6-3**]  14:02
-T:  [**3018-6-3**]  15:27
-JOB#:  [**Job Number 3616**]
+D:  [**3018-6-3**]  14:02^
+T:  [**3018-6-3**]  15:27^
+JOB#:  [**Job Number 3616**]^

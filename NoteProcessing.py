@@ -70,6 +70,23 @@ def parseMultipleTrainingDocs(docList, sentenceBoundaries, numPreceeding, numFol
 
     return trainingDataOriginal
 
+def parseMultipleTrainingDocStrings(docList, sentenceBoundaries, numPreceeding, numFollowing):
+    if len(docList) == 0 or len(sentenceBoundaries) == 0 or len(docList) != len(sentenceBoundaries):
+        raise RuntimeError("The length of docList and sentenceBoundaries must be the same non-zero value.")
+
+    trainingDataOriginal = parseTrainingDoc(docList[0], sentenceBoundaries[0], numPreceeding, numFollowing)
+
+    for index in range(1, len(docList)):
+        newTrainingData = parseTrainingDoc(docList[index], sentenceBoundaries[index], numPreceeding, numFollowing)
+        trainingDataOriginal = TrainingData.MergeTrainingData(trainingDataOriginal, newTrainingData)
+
+    return trainingDataOriginal
+
+
+def parseSingleTrainingDocString(doc, sentenceBoundaries, numPreceeding, numFollowing):
+
+    return parseTrainingDoc(doc, sentenceBoundaries, numPreceeding, numFollowing)
+
 
 def grabPreceedingOverlapsBeginning(doc, cursor, numPreceeding):
     difference = int(math.sqrt(math.pow(cursor - numPreceeding, 2)))
