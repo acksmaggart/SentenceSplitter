@@ -1,0 +1,136 @@
+TSICU^
+   HPI:
+   69 yo F from [**Country 1168**] Republic, w/R paraesophageal diaphragmatic
+   hernia w/portion of transverse colon in thoracic cavity on CT scan, s/p
+   diaphragmatic hernia repair ([**9-24**]) c/b rapid AFib, ETOH withdrawal,
+   disorientation^
+   Chief complaint:
+   EtOH withdrawal
+   PMHx:
+   Alcoholic liver disease  2.Chronic pancreatitis
+   3.Paraesophagial diaphragmatic hernia  4.Diverticulosis
+   Current medications:
+   . 2. 1000 mL LR 3. Albuterol 0.083% Neb Soln 4. Docusate Sodium
+   (Liquid) 5. FoLIC Acid 6. Heparin 7. Insulin 8. Ipratropium Bromide Neb
+   9. Lorazepam 10. Lorazepam 11. Metoprolol Tartrate 12. Metoprolol
+   Tartrate 13. Morphine Sulfate 14. Ondansetron 15. Pantoprazole 16.
+   Pneumococcal Vac Polyvalent 17. Sodium Chloride 0.9% Flush 18. Thiamine
+   24 Hour Events:
+   ([**9-28**]) started dilt gtt for HR 130s AFib (d/c'd metoprolol)^
+   Allergies:
+   Aspirin
+   Rash; swelling;
+   Penicillins
+   Rash;
+   Mold Extracts
+   Unknown;
+   Last dose of Antibiotics:
+   Infusions:
+   Other ICU medications:
+   Other medications:
+   Flowsheet Data as of  [**2880-9-29**] 07:31 AM
+   Vital signs
+   Hemodynamic monitoring
+   Fluid balance
+                                                                  24 hours
+                                                             Since [**84**] a.m.
+                  Total In:
+                  PO:
+                  Tube feeding:
+   IV Fluid:
+   Blood products:
+   Total out:
+                                                                      0 mL
+                                                                      0 mL
+   Urine:
+   NG:
+   Stool:
+   Drains:
+   Balance:
+                                                                      0 mL
+                                                                      0 mL
+   Respiratory support
+   ABG:
+   Physical Examination^
+   General Appearance: agitated^
+   HEENT: PERRL^
+   Cardiovascular: (Rhythm: Regular)^
+   Respiratory / Chest: (Expansion: Symmetric), (Breath Sounds: Wheezes :
+   diffuse, b/l)^
+   Abdominal: Soft^
+   Left Extremities: (Edema: Trace), (Temperature: Warm)^
+   Right Extremities: (Edema: Trace), (Temperature: Warm)^
+   Neurologic: (Awake / Alert / Oriented: x 1), Follows simple commands,
+   Moves all extremities, inconsistently following commands^
+   Labs / Radiology
+   204 K/uL
+   10.4 g/dL
+   94 mg/dL
+   0.5 mg/dL
+   29 mEq/L
+   3.5 mEq/L
+   10 mg/dL
+   102 mEq/L
+   142 mEq/L
+   30.8 %
+   9.4 K/uL
+        [image002.jpg]
+                             [**2880-9-27**]  04:42 AM
+                             [**2880-9-28**]  04:45 AM
+                             [**2880-9-29**]  06:13 AM
+   WBC
+   10.6
+   10.3
+   9.4
+   Hct
+   32.8
+   32.8
+   30.8
+   Plt
+   174
+   178
+   204
+   Creatinine
+   0.6
+   0.5
+   Glucose
+   101
+   94
+   Other labs: ALT / AST:18/41, Alk-Phos / T bili:69/0.6, Amylase /
+   Lipase:20/12, Ca:8.9 mg/dL, Mg:1.6 mg/dL, PO4:2.3 mg/dL
+   Imaging: [**9-26**] CXR: Worsening bibasilar opacities, Interstitial edema,
+   likely from fluid overload, Air-fluid level lower retrosternal region,
+   Assessment and Plan
+   Assessment and Plan: 69 yo F from [**Country 1168**] Republic, w/R
+   paraesophageal diaphragmatic hernia w/portion of transverse colon in
+   thoracic cavity on CT scan, s/p diaphragmatic hernia repair ([**9-24**]) c/b
+   rapid AFib, ETOH withdrawal, disorientation^
+   Neurologic: Neuro checks Q: 1 hr, morphine prn.^  Ativan q4h standing.^
+   haldol prn if agitation continues.^
+   Cardiovascular: diltiazem for AF.^   consider lopressor if tachycardic.^
+   Pulmonary: nc, stable.  prn nebs.^
+   Gastrointestinal / Abdomen: PPI
+   Nutrition: thiamine/folate.  NPO [**2-17**] depressed neuro status.
+   Renal: Foley, Adequate UO
+   Hematology: stable
+   Endocrine: RISS
+   Infectious Disease:
+   Lines / Tubes / Drains: Foley, PIVs.
+   Wounds:
+   Imaging:
+   Fluids: KVO
+   Consults: General surgery
+   Billing Diagnosis: Other: acute alcohol withdrawal
+   ICU Care
+   Nutrition:
+   Glycemic Control:  Regular insulin sliding scale
+   Lines:
+   Prophylaxis:
+   DVT: Boots, SQ UF Heparin
+   Stress ulcer: PPI
+   VAP bundle:
+   Comments:
+   Communication: ICU consent signed Comments:
+   Code status: Full code
+   Disposition: ICU
+   Total time spent:

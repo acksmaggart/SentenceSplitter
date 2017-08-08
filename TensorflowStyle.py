@@ -57,19 +57,19 @@ maxSideLength = 30
 # print "npArrays created."
 
 
-trainingDocs = ['327000.txt', '10020.txt', '457663.txt']
-testDoc = '10018.txt'
+trainingDocs = ['10018.txt', '10020.txt', '457663.txt']
+testDoc = '327000.txt'
 
 trainingBoundaries = []
 trainingTexts = []
 for docName in trainingDocs:
-    with open("./ClinicalNotes/" + docName, 'rU') as inFile:
+    with open("./ClinicalNotes/Training1/" + docName, 'rU') as inFile:
         body = inFile.read()
         boundaries, body = parseSentenceBoundaries(body)
         trainingBoundaries.append(boundaries)
         trainingTexts.append(body)
 
-inFile = open("./ClinicalNotes/" + testDoc, 'rU')
+inFile = open("./ClinicalNotes/Training1/" + testDoc, 'rU')
 body = inFile.read()
 inFile.close()
 testBoundaries, testText = parseSentenceBoundaries(body)
@@ -127,29 +127,35 @@ tfPredictionScore = tf.reduce_sum(tf.multiply(tf.gather(tfTrainingBoundariesVect
 
 # Evaluate accuracy.
 tfPrediction = tf.where(tf.greater_equal(tfPredictionScore, tfThresholdWeight), tf.ones(tf.shape(tfTestBoundariesVector), dtype="float32"), tf.zeros(tf.shape(tfTestBoundariesVector), dtype="float32"))
-tfMatchVector = tf.where(tf.equal(tfPrediction, tfTestBoundariesVector), tf.ones(tf.shape(tfTestBoundariesVector), dtype="float32"), tf.zeros(tf.shape(tfTestBoundariesVector), dtype="float32"))
-tfAccuracy = tf.div(tf.reduce_sum(tfMatchVector), tf.cast(tf.shape(tfMatchVector), tf.float32))
+tfTruePositiveCount = tf.reduce_sum(tf.multiply(tfPrediction, tfTestBoundariesVector))
+tfTotalPredictedPositives = tf.reduce_sum(tfPrediction)
+tfTotalPositives = tf.reduce_sum(tfTestBoundariesVector)
+
+tfPrecision = tf.cond(tf.not_equal(tfTotalPredictedPositives, 0), lambda: tfTruePositiveCount / tfTotalPredictedPositives, lambda: tf.zeros(1)[0])
+tfRecall = tf.cond(tf.not_equal(tfTotalPositives, 0), lambda: tfTruePositiveCount / tfTotalPositives, lambda: tf.zeros(1)[0])
+tfFScore = tf.cond(tf.logical_and(tf.not_equal(tfPrecision, 0), tf.not_equal(tfRecall, 0)), lambda: 2 * (tfPrecision * tfRecall) / (tfPrecision + tfRecall), lambda: tf.zeros(1))
 
 
-#  numPreceedingArray = [0, 1, 3, 5, 10, 20]
-# numFollowingArray = [0, 1, 3, 5, 10, 20]
-# numNeighborsArray = [1, 3, 5, 7]
-# thresholdArray = [0.1, 0.3, 0.5, 0.7, 0.9, 0.999]
-numPreceedingArray = [1]
-numFollowingArray = [0]
-numNeighborsArray = [1]
-thresholdArray = [0.1]
+
+numPreceedingArray = [0, 1, 3, 5, 10, 20, 30]
+numFollowingArray = [0, 1, 3, 5, 10, 20, 30]
+numNeighborsArray = [1, 3, 5, 7]
+thresholdArray = [0.1, 0.3, 0.5, 0.7, 0.9, 0.999]
+# numPreceedingArray = [4]
+# numFollowingArray = [4]
+# numNeighborsArray = [3]
+# thresholdArray = [0.5]
 
 start = datetime.now()
 
 iterationCount = 0
 totalIterations = len(numPreceedingArray) * len(numFollowingArray) * len(numNeighborsArray) * len(thresholdArray)
 
-outFilePath = "Report.txt"
+outFilePath = "ReportTraining1.txt"
 if os.path.isfile(outFilePath):
     os.remove(outFilePath)
 outFile = open(outFilePath, 'a')
-outFile.write("NumPreceeding\tNumFollowing\tNumNeighbors\tThreshold\tAccuracy\tRuntime\n")
+outFile.write("NumPreceeding\tNumFollowing\tNumNeighbors\tThreshold\tRecall\tPrecision\tF-Score\tRuntime\n")
 
 print "About to start iterations."
 for numPreceedingIteration in numPreceedingArray:
@@ -174,27 +180,19 @@ for numPreceedingIteration in numPreceedingArray:
                     numNeighbors: numNeighborsIteration
                 }
 
-                accuracyResult, numPreceedingResult, numFollowingResult, numNeighborsResult, thresholdResult, shapeTest, shapeTraining = session.run([tfAccuracy, tfNumPreceeding, tfNumFollowing, numNeighbors, tfThresholdWeight, tfTestPointsTruncatedShape, tfTrainingPointsTruncatedShape], feedDict)
-                print shapeTest
-                print shapeTraining
-                # if accuracyResult[0] > best["accuracy"]:
-                #     best["accuracy"] = accuracyResult[0]
-                #     best["numPreceeding"] = numPreceedingResult,
-                #     best["numFollowing"] = numFollowingResult
-                #     best["numNeighbors"] = numNeighborsResult
-                #     best["threshold"] = thresholdResult
-                #
-                # if accuracyResult[0] < worst["accuracy"]:
-                #     worst["accuracy"] = accuracyResult[0]
-                #     worst["numPreceeding"] = numPreceedingResult,
-                #     worst["numFollowing"] = numFollowingResult
-                #     worst["numNeighbors"] = numNeighborsResult
-                #     worst["threshold"] = thresholdResult
+                truePositiveCount, totalPredictedPositives, totalPositives, precision, recall, fScore, numPreceedingResult, numFollowingResult, numNeighborsResult, thresholdResult, shapeTest, shapeTraining = session.run([tfTruePositiveCount, tfTotalPredictedPositives, tfTotalPositives, tfPrecision, tfRecall, tfFScore, tfNumPreceeding, tfNumFollowing, numNeighbors, tfThresholdWeight, tfTestPointsTruncatedShape, tfTrainingPointsTruncatedShape], feedDict)
+
+                # print "True Positive Count:"
+                # print truePositiveCount
+                # print "Total Predicted Positives:"
+                # print totalPredictedPositives
+                # print "Total Positives:"
+                # print totalPositives
 
                 session.close()
                 singleRunEnd = datetime.now()
                 singleRunElapsed = singleRunEnd - singleRunStart
-                outString = "%d\t%d\t%d\t%.3f\t%f\t%s\n" % (numPreceedingResult, numFollowingResult, numNeighborsResult, thresholdResult, accuracyResult[0], str(singleRunElapsed))
+                outString = "%d\t%d\t%d\t%.3f\t%f\t%f\t%f\t%s\n" % (numPreceedingResult, numFollowingResult, numNeighborsResult, thresholdResult, recall, precision, fScore, str(singleRunElapsed))
                 outFile.write(outString)
                 outFile.flush()
 

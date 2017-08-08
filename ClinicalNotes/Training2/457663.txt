@@ -1,0 +1,189 @@
+TITLE:^
+   Chief Complaint:^
+   24 Hour Events:^
+   - AM Vanco ordered,^
+   - started on diuril, I/O about even as of 18:00^
+   - Neuro: Triphasic waves noted on EEG suggests metabolic
+   encephalopathy.^  Head CT to eval for anoxic brain injury.^
+   - CT head: No evidence of hemorrhage, edema, large masses, mass effect,
+   or large vascular territory infarction. Coiling of NGT in NP.^
+   - EP: wean lidocaine^
+   - temp line placed, CVVH started.^
+   - changed tube feeds per Nutrition recs to Vivonex + reglan^
+   - successfully weaning levophed.^
+   - reduced FiO2 to 40, weaning RR^
+   - lidocaine off^
+   - had several episodes of Vtach at 4:15, paced out.  One episode, ICD
+   tried pacing 4X, without improvement.^  SBP 50, cardioverted at 300.^
+   Lidocaine started back at 2.^  ( probably should not be weaned until off
+   pressores)^
+   Allergies:^
+   No Known Drug Allergies^
+   Last dose of Antibiotics:^
+   Piperacillin/Tazobactam (Zosyn) - [**3186-12-14**] 08:00 AM^
+   Vancomycin - [**3186-12-15**] 11:15 AM^
+   Ciprofloxacin - [**3186-12-15**] 12:00 PM^
+   Cefipime - [**3186-12-15**] 02:00 PM^
+   Infusions:^
+   Amiodarone - 0.5 mg/min^
+   Heparin Sodium - 1,050 units/hour^
+   Calcium Gluconate (CRRT) - 1.2 grams/hour^
+   Norepinephrine - 0.11 mcg/Kg/min^
+   Lidocaine - 2 mg/min^
+   Other ICU medications:^
+   Other medications:^
+   Metoclopramide 10mg^
+   Calcium acetate^
+   Chlorothiazide 500 mg^
+   Vanco 1000mg^
+   Cipro 400 mg^
+   Cefepime 1 g^
+   ASA 325 mg^
+   Hydrocortisone^
+   Famotidine 20mg^
+   Docusate^
+   Senna^
+   bisacodyl^
+   Changes to medical and family history:^
+   Review of systems is unchanged from admission except as noted below^
+   Review of systems:^
+   Flowsheet Data as of  [**3186-12-16**] 06:46 AM^
+   Vital signs^
+   Hemodynamic monitoring^
+   Fluid balance^
+                                                                  24 hours
+                                                               Since 12 AM^
+   Tmax: 37.2^
+C (99^
+   Tcurrent: 36.7^
+C (98.1^
+   HR: 70 (62 - 130) bpm^
+   BP: 91/58(70) {91/58(70) - 134/99(108)} mmHg^
+   RR: 16 (10 - 22) insp/min^
+   SpO2: 99%^
+   Heart rhythm: AV Paced^
+   Wgt (current): 76.4 kg (admission): 76 kg^
+   Height: 64 Inch^
+    CVP: 17 (17 - 23)mmHg^
+   Total In:
+                                                                  2,379 mL
+                                                                  1,103 mL^
+   PO:^
+   TF:
+                                                                     65 mL
+                                                                     52 mL^
+   IVF:
+                                                                  2,254 mL
+                                                                  1,001 mL^
+   Blood products:^
+   Total out:
+                                                                  3,855 mL
+                                                                  2,137 mL^
+   Urine:
+                                                                  3,180 mL
+                                                                    650 mL^
+   NG:
+                                                                    200 mL
+                                                                     60 mL^
+   Stool:^
+   Drains:^
+   Balance:
+                                                                 -1,476 mL
+                                                                 -1,034 mL^
+   Respiratory support^
+   O2 Delivery Device: Endotracheal tube^
+   Ventilator mode: CMV/ASSIST/AutoFlow^
+   Vt (Set): 550 (550 - 550) mL^
+   RR (Set): 16^
+   RR (Spontaneous): 0^
+   PEEP: 5 cmH2O^
+   FiO2: 40%^
+   RSBI Deferred: Hemodynamic Instability^
+   PIP: 22 cmH2O^
+   Plateau: 15 cmH2O^
+   Compliance: 55 cmH2O/mL^
+   SpO2: 99%^
+   ABG: 7.47/32/134/21/1^
+   Ve: 10.7 L/min^
+   PaO2 / FiO2: 335^
+   Physical Examination^
+   Peripheral Vascular: (Right radial pulse: Not assessed), (Left radial^
+   pulse: Not assessed), (Right DP pulse: Not assessed), (Left DP pulse:
+   Not assessed)^
+   Skin:  Not assessed^
+   Neurologic: Responds to: Not assessed, Movement: Not assessed, Tone:
+   Not assessed^
+   Labs / Radiology^
+   221 K/uL^
+   9.1 g/dL^
+   91 mg/dL^
+   2.8 mg/dL^
+   21 mEq/L^
+   3.5 mEq/L^
+   62 mg/dL^
+   101 mEq/L^
+   135 mEq/L^
+   26.4 %^
+   10.6 K/uL^
+        [image002.jpg]
+                            [**3186-12-14**]  10:54 PM
+                            [**3186-12-14**]  11:06 PM
+                            [**3186-12-15**]  05:20 AM
+                            [**3186-12-15**]  05:34 AM
+                            [**3186-12-15**]  05:05 PM
+                            [**3186-12-15**]  05:25 PM
+                            [**3186-12-15**]  11:30 PM
+                            [**3186-12-15**]  11:40 PM
+                            [**3186-12-16**]  04:45 AM
+                            [**3186-12-16**]  05:01 AM^
+   WBC^
+   10.3^
+   10.6^
+   10.6^
+   Hct^
+   28.9^
+   27.6^
+   26.4^
+   Plt^
+   230^
+   246^
+   221^
+   Cr^
+   4.1^
+   4.2^
+   4.0^
+   2.8^
+   TCO2^
+   19^
+   18^
+   19^
+   22^
+   24^
+   Glucose^
+   106^
+   116^
+   97^
+   87^
+   91^
+   Other labs: PT^ / PTT^ / INR:19.6/150.0/1.8^, CK^ / CKMB^ /
+   Troponin-T:374/11/,^ ALT^ / AST:69/53,^ Alk Phos^ / T Bili:199/2.2,
+   Differential-Neuts:77.0 %,^ Band:14.0 %,^ Lymph:3.0 %,^ Mono:3.0 %,
+   Eos:0.0 %,^ Fibrinogen:523 mg/dL,^ Lactic Acid:1.3 mmol/L,^ Albumin:3.4
+   g/dL,^ LDH:214 IU/L,^ Ca++:8.8 mg/dL,^ Mg++:1.9 mg/dL,^ PO4:3.5 mg/dL
+   Assessment and Plan^
+   ICU Care^
+   Nutrition:^
+   Vivonex (Full) - [**3186-12-16**] 01:31 AM 10 mL/hour^
+   Glycemic Control:^
+   Lines:^
+   Arterial Line - [**3186-12-12**] 03:06 AM^
+   Multi Lumen - [**3186-12-12**] 04:00 AM^
+   18 Gauge - [**3186-12-13**] 08:30 PM^
+   Prophylaxis:^
+   DVT:^
+   Stress ulcer:^
+   VAP:^
+   Comments:^
+   Communication:  Comments:^
+   Code status: Full code^
+   Disposition:^

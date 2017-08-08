@@ -1,0 +1,4 @@
+Recall: 0.730263
+Precision: 0.776224
+F-Score:0.752542
+

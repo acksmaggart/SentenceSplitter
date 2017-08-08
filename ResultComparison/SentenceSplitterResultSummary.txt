@@ -1,0 +1,27 @@
+************ With 10018.txt as Test Doc ****************
+Builtin Best:
+Recall: 0.730263
+Precision: 0.776224
+F-Score:0.752542
+
+
+K-Nearest Neighbors:
+Recall: 0.736842
+Precision: 0.182114
+F-Score:0.31773
+Optimal Algorithm Parameters: Preceeding: 1, Following: 1, Neighbors: 7, Threshold: .999
+
+
+
+
+*********** With 327000.txt as Test Doc **************
+Builtin:
+Recall: 0.081481
+Precision: 0.379310
+F-Score:0.134146
+
+K-Nearest Neighbors:
+Recall: 0.82963
+Precision: 0.217899
+F-Score:0.345146
+Optimal Algorithm Parameters: Preceeding: 1, Following: 1, Neighbors: 5, Threshold: .1, .3, or .5
